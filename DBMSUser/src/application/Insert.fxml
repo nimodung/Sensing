@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InsertController">
+   <children>
+      <TextField fx:id="tf_sensingposition" layoutX="136.0" layoutY="26.0" />
+      <TextField fx:id="tf_temperature" layoutX="136.0" layoutY="78.0" />
+      <TextField fx:id="tf_sdate" layoutX="136.0" layoutY="135.0" />
+      <Label layoutX="29.0" layoutY="30.0" text="SensingPosition" />
+      <Label layoutX="29.0" layoutY="82.0" text="Temperature" />
+      <Label layoutX="29.0" layoutY="139.0" text="sensing Date" />
+      <Button fx:id="btn_insert" layoutX="323.0" layoutY="78.0" mnemonicParsing="false" onAction="#insertBtnHandler" text="insert" />
+      <ListView fx:id="lv_sensing" layoutX="25.0" layoutY="200.0" prefHeight="180.0" prefWidth="350.0" />
+   </children>
+</AnchorPane>

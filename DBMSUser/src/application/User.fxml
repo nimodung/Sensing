@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UserController">
+   <children>
+      <TextField fx:id="tf_column" layoutX="121.0" layoutY="45.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btn_query" layoutX="400.0" layoutY="45.0" mnemonicParsing="false" onAction="#handleBtnQuery" text="조회">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="ta_result" layoutX="55.0" layoutY="176.0" prefHeight="203.0" prefWidth="189.0" />
+      <Label layoutX="55.0" layoutY="51.0" text="검색">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="lv_row" layoutX="260.0" layoutY="176.0" prefHeight="203.0" prefWidth="200.0" />
+      <ListView fx:id="lv_column" layoutX="121.0" layoutY="91.0" prefHeight="72.0" prefWidth="243.0" />
+   </children>
+</AnchorPane>

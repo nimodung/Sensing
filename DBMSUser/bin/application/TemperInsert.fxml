@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="250.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TemperInsertController">
+   <children>
+      <Label layoutX="149.0" layoutY="28.0" text="현재 온도">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_temper" alignment="CENTER" layoutX="160.0" layoutY="66.0" prefHeight="29.0" prefWidth="80.0" text="0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="273.0" layoutY="28.0" text="현재 습도">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="28.0" text="경과시간">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_humi" alignment="CENTER" layoutX="285.0" layoutY="66.0" prefHeight="29.0" prefWidth="80.0" text="0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="194.0" layoutY="148.0" text="부터">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="196.0" layoutY="181.0" text="까지">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="30.0" layoutY="112.0" prefHeight="7.0" prefWidth="340.0" />
+      <Button fx:id="btn_temper" layoutX="253.0" layoutY="143.0" mnemonicParsing="false" onAction="#TemperBtnOnAction" text="온도 그래프 보기" />
+      <Button fx:id="btn_humi" layoutX="253.0" layoutY="187.0" mnemonicParsing="false" onAction="#HumiBtnOnAction" text="습도 그래프 보기" />
+      <Label fx:id="lb_hour" layoutX="27.0" layoutY="69.0" text="00">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_sec" layoutX="114.0" layoutY="69.0" text="00">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_min" layoutX="71.0" layoutY="69.0" text="00">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="69.0" text=":">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="70.0" text=":">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_shour" layoutX="20.0" layoutY="149.0" prefHeight="22.0" prefWidth="36.0" text="00" />
+      <Label layoutX="58.0" layoutY="153.0" text="시" />
+      <TextField fx:id="tf_smin" layoutX="77.0" layoutY="149.0" prefHeight="22.0" prefWidth="36.0" text="00" />
+      <Label layoutX="115.0" layoutY="153.0" text="분" />
+      <TextField fx:id="tf_ssec" layoutX="134.0" layoutY="149.0" prefHeight="22.0" prefWidth="36.0" text="00" />
+      <Label layoutX="173.0" layoutY="153.0" text="초" />
+      <TextField fx:id="tf_ehour" layoutX="21.0" layoutY="181.0" prefHeight="22.0" prefWidth="36.0" text="00" />
+      <Label layoutX="59.0" layoutY="185.0" text="시" />
+      <TextField fx:id="tf_emin" layoutX="78.0" layoutY="181.0" prefHeight="22.0" prefWidth="36.0" text="00" />
+      <Label layoutX="116.0" layoutY="185.0" text="분" />
+      <TextField fx:id="tf_esec" layoutX="135.0" layoutY="181.0" prefHeight="22.0" prefWidth="36.0" text="00" />
+      <Label layoutX="174.0" layoutY="185.0" text="초" />
+   </children>
+</AnchorPane>
